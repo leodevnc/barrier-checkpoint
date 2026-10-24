@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "barrier-checkpoint"
+version = "0.1.0"
+description = "Bounded checkpoint barrier and channel-state recovery experiments"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+barrier-checkpoint = "barrier_checkpoint.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["barrier_checkpoint*"]

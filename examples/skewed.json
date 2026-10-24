@@ -1,0 +1,28 @@
+{
+  "capacity": 2,
+  "process_every": 1,
+  "capture_limit": 100,
+  "max_ticks": 1000,
+  "sources": [
+    {
+      "name": "fast", "cut": 2, "interval": 1, "delay": 0,
+      "records": [
+        {"key":"requests","value":1}, {"key":"requests","value":2},
+        {"key":"requests","value":3}, {"key":"requests","value":4},
+        {"key":"requests","value":5}, {"key":"requests","value":6},
+        {"key":"requests","value":7}, {"key":"requests","value":8},
+        {"key":"requests","value":9}, {"key":"requests","value":10},
+        {"key":"requests","value":11}, {"key":"requests","value":12}
+      ]
+    },
+    {
+      "name": "slow", "cut": 6, "interval": 4, "delay": 2,
+      "records": [
+        {"key":"requests","value":10}, {"key":"requests","value":10},
+        {"key":"requests","value":10}, {"key":"requests","value":10},
+        {"key":"requests","value":10}, {"key":"requests","value":10},
+        {"key":"requests","value":10}, {"key":"requests","value":10}
+      ]
+    }
+  ]
+}
